@@ -99,7 +99,7 @@ app.delete("/delete/:id", async(req, res)=>{
             message:"data gagal dihapus"
         })
     }
-})
+}) 
 
 app.get("/all", async(req,res)=>{
     const ambil=await todo.findAll()
