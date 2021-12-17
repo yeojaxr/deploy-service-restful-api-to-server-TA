@@ -6,6 +6,10 @@ const {todo}=require("./models/index");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
+app.get("/",(req,res)=>{
+    res.json({message:"Welcome to T-API"})
+})
+
 app.post("/",(req,res)=>{
     res.json({message:"hello world"})
 })
